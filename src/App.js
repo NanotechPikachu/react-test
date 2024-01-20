@@ -16,11 +16,11 @@ export default function Board() {
     setIsX(!isX);
   }
     let status;
-    const winner = winner(square);
-    if (winner) {
-      status = `Winner player - ${winner}`;
+    const win = winner(square);
+    if (win) {
+      status = 'Player won - ' + winner;
     } else {
-      status = `Next player - ${isX ? 'X' : 'O'}`
+      status = 'Next player - ' + (isX ? 'X' : 'O');
     }
   return (
    <>
