@@ -5,19 +5,26 @@ export default function Board() {
   const [isX, setIsX] = useState(true);
 
   function handleClick(i) {
-    if (square[i]) return;
+    if (square[i] || winner(square)) return;
     const nextSq = square.slice();
     if (isX) {
       nextSq[i] = 'X';
-      setIsX(false);
     } else {
       nextSq[i] = 'O';
-      setIsX(true);
     }
     setSquare(nextSq);
+    setIsX(!isX);
   }
+    let status;
+    const winner = winner(square);
+    if (winner) {
+      status = `Winner player - ${winner}`;
+    } else {
+      status = `Next player - ${isX ? 'X' : 'O'}`
+    }
   return (
    <>
+     <div className="status">{status}</div>
      <div className="board-row">
        <Square value={square[0]} onSqClick={() => handleClick(0)} />
        <Square value={square[1]} onSqClick={() => handleClick(1)} />
@@ -41,4 +48,13 @@ function Square({ value, onSqClick }) {
   return (
     <button className="square" onClick={onSqClick}>{value}</button>
     )
+}
+
+function winner(square) {
+  const l = [ [0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6] ];
+  for (let i = 0, i < l.length, i++) {
+    const [a,b,c] = l[i];
+    if (square[a] && square[a] === square[b] && square[a] === square[c]) return square[a];
+  }
+  return null;
 }
