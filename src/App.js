@@ -18,7 +18,7 @@ export default function Board() {
     let status;
     const win = winner(square);
     if (win) {
-      status = 'Player won - ' + winner;
+      status = 'Player won - ' + win;
     } else {
       status = 'Next player - ' + (isX ? 'X' : 'O');
     }
