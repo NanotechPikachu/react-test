@@ -8,7 +8,13 @@ export default function Game() {
     setHistory([...history, nextSq]);
     setIsX(!isX);
   }
-
+  return (
+    <div className="game">
+      <div className="game-board">
+      </div>
+      
+    </div>
+  )
 }
 
 function Board({ isX, square, onPlay }) {
