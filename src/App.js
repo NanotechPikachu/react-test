@@ -25,7 +25,7 @@ export default function Game() {
       <button onClick={() => jump(move)}>{desc}</button>
       </li>
     )
-  }
+  })
   return (
     <div className="game">
       <div className="game-board">
