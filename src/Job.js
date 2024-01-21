@@ -19,3 +19,14 @@ function SearchBar() {
     </form>
   )
 }
+
+function ProductRow({ product }) {
+  const pr = product.stocked ? product.name : <span style={{ color: "red"}}>{product.name}</span>
+  
+  return (
+    <tr>
+    <td>{name}</td>
+    <td>{product.prize}</td>
+    </tr>
+  )
+}
