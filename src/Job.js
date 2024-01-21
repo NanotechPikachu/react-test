@@ -8,3 +8,14 @@ const PRODUCTS = [
   {category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin"},
   {category: "Vegetables", price: "$1", stocked: true, name: "Peas"}
 ];
+
+function SearchBar() {
+  return (
+    <form>
+    <input type="text" placeholder="search" />
+    <label>
+    <input type="checkbox" />{' '}Show only products in stock.
+    </label>
+    </form>
+  )
+}
