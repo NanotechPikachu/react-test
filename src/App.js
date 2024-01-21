@@ -34,6 +34,7 @@ console.log(move)
         <Board isX={isX} square={currentSq} onPlay={handlePlay} />
       </div>
       <div className="game-info">
+        <ol>{moves}</ol>
       </div>  
     </div>
   )
