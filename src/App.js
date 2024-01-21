@@ -21,7 +21,7 @@ export default function Game() {
     if (move > 0) {
       desc = "Go to move # " + move;
     } else {
-      desc = "Go to start of game";
+      desc = "Go to the start of game";
     }
 
     return (
@@ -59,6 +59,8 @@ function Board({ isX, square, onPlay }) {
     const win = winner(square);
     if (win) {
       status = 'Player won - ' + win;
+    } else if (!square.some((item) => item === null) {
+      status = 'Game Draw!';
     } else {
       status = 'Next player - ' + (isX ? 'X' : 'O');
     }
