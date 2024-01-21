@@ -11,6 +11,7 @@ export default function Game() {
   return (
     <div className="game">
       <div className="game-board">
+        <Board isX={isX} square={currentSq} onPlay={handlePlay} />
       </div>
       <div className="game-info">
       </div>  
