@@ -2,15 +2,18 @@ import { useState } from 'react';
 
 export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
-  const [isX, setIsX] = useState(true);
-  const currentSq = history[history.length - 1];
+  const [curMove, setCurMove] = useState(0);
+  const isX = curMove % 2 === 0;
+  const currentSq = history[curMove];
+  
   function handlePlay(nextSq) {
-    setHistory([...history, nextSq]);
-    setIsX(!isX);
+    const nextHistory = [...history.slice(0, curMove + 1), nextSq];
+    setHistory(nextHistory);
+    setCurMove(nextHistory.length - 1);
   }
-  console.log(history);
+
   function jump(next) {
-//Todo
+    setCurMove(next);
   }
 
   const moves = history.map((square, move) =>  {
@@ -20,7 +23,7 @@ export default function Game() {
     } else {
       desc = "Go to start of game";
     }
-console.log(move)
+
     return (
       <li key={move}>
         <button onClick={() => jump(move)}>{desc}</button>
