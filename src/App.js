@@ -8,6 +8,24 @@ export default function Game() {
     setHistory([...history, nextSq]);
     setIsX(!isX);
   }
+  console.log(history);
+  function jump(next) {
+//Todo
+  }
+
+  const moves = history.map((square, move) =>  {
+    let desc;
+    if (move > 0) {
+      desc = "Go to move # " + move;
+    } else {
+      desc = "Go to start of game";
+    }
+    return (
+      <li key={move}>
+      <button onClick={() => jump(move)}>{desc}</button>
+      </li>
+    )
+  }
   return (
     <div className="game">
       <div className="game-board">
