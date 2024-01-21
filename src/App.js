@@ -20,12 +20,14 @@ export default function Game() {
     } else {
       desc = "Go to start of game";
     }
+console.log(move)
     return (
       <li key={move}>
       <button onClick={() => jump(move)}>{desc}</button>
       </li>
-    )
+    );
   })
+
   return (
     <div className="game">
       <div className="game-board">
