@@ -23,10 +23,10 @@ export default function Game() {
 console.log(move)
     return (
       <li key={move}>
-      <button onClick={() => jump(move)}>{desc}</button>
+        <button onClick={() => jump(move)}>{desc}</button>
       </li>
     );
-  })
+  });
 
   return (
     <div className="game">
