@@ -58,8 +58,10 @@ function Board({ isX, square, onPlay }) {
     let status;
     const win = winner(square);
     if (win) {
+      alert('Player won - ' + win);
       status = 'Player won - ' + win;
     } else if (!square.some((item) => item === null)) {
+      alert('Game Draw!');
       status = 'Game Draw!';
     } else {
       status = 'Next player - ' + (isX ? 'X' : 'O');
