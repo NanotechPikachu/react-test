@@ -26,7 +26,7 @@ function ProductRow({ product }) {
   return (
     <tr>
     <td>{name}</td>
-    <td>{product.prize}</td>
+    <td>{product.price}</td>
     </tr>
   )
 }
