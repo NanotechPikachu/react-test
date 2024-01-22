@@ -72,3 +72,7 @@ function FilterTable({ products }) {
     </div>
   )
 }
+
+export default function App() {
+  return <FilterTable products={PRODUCTS} />;
+}
