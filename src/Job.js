@@ -21,7 +21,7 @@ function SearchBar() {
 }
 
 function ProductRow({ product }) {
-  const pr = product.stocked ? product.name : <span style={{ color: "red"}}>{product.name}</span>
+  const name = product.stocked ? product.name : <span style={{ color: "red"}}>{product.name}</span>
   
   return (
     <tr>
