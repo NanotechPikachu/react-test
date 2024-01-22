@@ -41,7 +41,7 @@ function ProductCatRow({ category }) {
 
 function ProductTable({ products }) {
   const rows = [];
-  const lastCat;
+  const lastCat = null;
   
   products.forEach((p) => {
     if (p.category !== lastCat) {
