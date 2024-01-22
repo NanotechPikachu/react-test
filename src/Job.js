@@ -63,3 +63,12 @@ function ProductTable({ products }) {
     </table>
   )
 }
+
+function FilterTable({ products }) {
+  return (
+    <div>
+    <SearchBar />
+    <ProductTable products={products} />
+    </div>
+  )
+}
