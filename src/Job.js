@@ -30,3 +30,36 @@ function ProductRow({ product }) {
     </tr>
   )
 }
+
+function ProductCatRow({ category }) {
+  return (
+    <tr>
+    <th colspan="2">{category}</th>
+    </tr>
+  )
+}
+
+function ProductTable({ products }) {
+  const rows = [];
+  const lastCat;
+  
+  products.forEach((p) => {
+    if (p.category !== lastCat) {
+      rows.push(
+        <ProductCatRow category={p.category} key={p.category} />
+      )
+    }
+    rows.push(
+      <ProductRow product={p} key={p.name} />
+    )
+    lastCat = p.category;
+  })
+  return (
+    <table>
+    <thread>
+    <tr><th>Name</th><th>Price</th></tr>
+    </thread>
+    <tbody>{rows}</tbody>
+    </table>
+  )
+}
