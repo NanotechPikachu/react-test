@@ -12,7 +12,7 @@ const PRODUCTS = [
 function SearchBar() {
   return (
     <form>
-    <input type="text" placeholder="search" />
+    <input type="text" placeholder="search" /><br />
     <label>
     <input type="checkbox" />{' '}Show only products in stock.
     </label>
