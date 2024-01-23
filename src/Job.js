@@ -14,7 +14,7 @@ function SearchBar({ filterPr, inStock, stockChange, filterChange }) {
     <form>
     <input type="text" value={filterPr} placeholder="search" onChange={(e) => filterChange(e.target.value)} /><br />
     <label>
-    <input type="checkbox" checked={inStock} onChange={(e) => stockChange(e.target.value)} />{' '}Show only products in stock.
+    <input type="checkbox" checked={inStock} onChange={(e) => stockChange(e.target.checked)} />{' '}Show only products in stock.
     </label>
     </form>
   )
