@@ -44,7 +44,7 @@ function ProductTable({ products, inStock, filterPr }) {
   let lastCat = null;
   
   products.forEach((p) => {
-    if (p.name.toLowerCase().indexOf(filterPr.toLowerCase())) === -1 { return; }
+    if (p.name.toLowerCase().indexOf(filterPr.toLowerCase()) === -1) return;
     if (inStock && !p.stocked) return;
 
     if (p.category !== lastCat) {
