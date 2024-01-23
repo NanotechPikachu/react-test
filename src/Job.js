@@ -9,12 +9,12 @@ const PRODUCTS = [
   {category: "Vegetables", price: "$1", stocked: true, name: "Peas"}
 ];
 
-function SearchBar({ filterPr, inStock }) {
+function SearchBar({ filterPr, inStock, stockChange, filterChange }) {
   return (
     <form>
-    <input type="text" value={filterPr} placeholder="search" /><br />
+    <input type="text" value={filterPr} placeholder="search" onChange={(e) => filterChange(e.target.value)} /><br />
     <label>
-    <input type="checkbox" checked={inStock} />{' '}Show only products in stock.
+    <input type="checkbox" checked={inStock} onChange={(e) => stockChange(e.target.value)} />{' '}Show only products in stock.
     </label>
     </form>
   )
@@ -72,7 +72,7 @@ function FilterTable({ products }) {
   const [inStock, setInStock] = useState(false);
   return (
     <div>
-    <SearchBar filterPr={filterPr} inStock={inStock} />
+    <SearchBar filterPr={filterPr} inStock={inStock} filterChange={setFilterPr} stockChange={setInStock} />
     <ProductTable products={products} filterPr={filterPr} inStock={inStock} />
     </div>
   )
