@@ -9,12 +9,12 @@ const PRODUCTS = [
   {category: "Vegetables", price: "$1", stocked: true, name: "Peas"}
 ];
 
-function SearchBar() {
+function SearchBar({ filterPr, inStock }) {
   return (
     <form>
-    <input type="text" placeholder="search" /><br />
+    <input type="text" value={filterPr} placeholder="search" /><br />
     <label>
-    <input type="checkbox" />{' '}Show only products in stock.
+    <input type="checkbox" checked={inStock} />{' '}Show only products in stock.
     </label>
     </form>
   )
@@ -39,7 +39,7 @@ function ProductCatRow({ category }) {
   )
 }
 
-function ProductTable({ products }) {
+function ProductTable({ products, inStock, filterPr }) {
   const rows = [];
   let lastCat = null;
   
@@ -65,10 +65,12 @@ function ProductTable({ products }) {
 }
 
 function FilterTable({ products }) {
+  const [filterPr, setFilterPr] = useState('');
+  const [inStock, setInStock] = useState(false);
   return (
     <div>
-    <SearchBar />
-    <ProductTable products={products} />
+    <SearchBar filterPr={filterPr} inStock={inStock} />
+    <ProductTable products={products} filterPr={filterPr} inStock={inStock} />
     </div>
   )
 }
