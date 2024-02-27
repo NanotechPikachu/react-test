@@ -1,7 +1,7 @@
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from 'react-router-dom';
-import "./styles.css";
+import "../css/styles.css";
 
 //import App from "./Job";
 import App from "./Router";
