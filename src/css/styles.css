@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @applybg-gradient-to-r from-red-400/90;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
