@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div>
     <NavBar />
-    <h1 className="py-20 text-center font-bold text-zinc-50 hover:text-zinc-100">Nanotech Wiki</h1>
+    <h1 className="py-20 text-center font-bold text-zinc-50 hover:text-zinc-100 text-2xl/[16px]">Nanotech Wiki</h1>
     <p className="text-center font-sans text-grey-50">A wiki for all by NanotechPikachu</p>
     </div>
   )
