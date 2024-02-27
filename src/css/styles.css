@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @applybg-gradient-to-r from-red-400/90;
+    @apply bg-gradient-to-r from-red-400/90;
   }
 }
 
