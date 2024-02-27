@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import Tic from './pages/App.jsx';
+import Main from './pages/App.jsx';
 
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Tic />} />
+      <Route path="/" element={<Main />} />
     </Routes>
   )
 }
