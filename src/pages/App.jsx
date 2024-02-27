@@ -5,7 +5,7 @@ export default function Page() {
     <div>
     <NavBar />
     <h1 className="py-20 text-center font-bold text-zinc-50 hover:text-zinc-100">Nanotech Wiki</h1>
-    <p className="text-center font-sans text-grey-50 py-20">A wiki for all by NanotechPikachu</p>
+    <p className="text-center font-sans text-grey-50">A wiki for all by NanotechPikachu</p>
     </div>
   )
 }
