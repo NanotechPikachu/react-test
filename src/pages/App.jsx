@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div>
     <NavBar />
-    <h1 className="py-6">Nanotech Wiki</h1>
+    <h1 className="py-11">Nanotech Wiki</h1>
     </div>
   )
 }
