@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Tic from './App';
+import Tic from './pages/App.jsx';
 
 export default function App() {
   return (
