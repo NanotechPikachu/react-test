@@ -9,7 +9,7 @@ export default function Page() {
     <p className="text-center font-sans text-grey-50">A wiki for all by NanotechPikachu</p>
     <Card title="text">
     <p> Heyjahahqywyahwhab. 
-gagwgahahaha
+gagwgahahaha ahah ahahah hahaha ahagga ahagga ahgaga ahahag
 hwhwgahahahaba </p>
     </Card>
     </div>
