@@ -1,4 +1,5 @@
 import '../css/styles.css';
+import Card from './Card';
 
 export default function Page() {
   return (
