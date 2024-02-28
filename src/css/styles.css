@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-r from-red-300/90 to-red-200/80;
+    @apply bg-gradient-to-r from-red-300/90 to-red-200/80 blur-sm;
   }
 }
 
