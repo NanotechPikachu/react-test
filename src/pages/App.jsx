@@ -9,7 +9,7 @@ export default function Page() {
     <p className="text-center font-sans text-grey-50">A wiki for all by NanotechPikachu</p>
     <div className="flex justify-between px-4 items-center">
     <button className="bg-blue-500 text-white mt-10 rounded-full ml-6 text-center py-2 px-4">Click Me</button>
-    <button className="bg-transparent text-white mt-10 rounded-full text-center py-2 px-4>Git</button>
+    <button className="bg-transparent text-white mt-10 rounded-full text-center py-2 px-4">Git</button>
     </div>
     <Card title="text" className="mt-10">
     <p> Heyjahahqywyahwhab. 
