@@ -13,10 +13,11 @@ export default function Page() {
     <button className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full ml-10 text-center py-2 px-4">Click Me</button>
     <GitButton />
     </div>
-    <Card title="text" className="mt-10" icon={true}>
-    <p> Heyjahahqywyahwhab. 
-gagwgahahaha ahah ahahah hahaha ahagga ahagga ahgaga ahahag
-hwhwgahahahaba </p>
+    <Card title="AniChu.DB" className="mt-10" icon={true}>
+    <p> A DataBase of all animes. </p>
+    </Card>
+    <Card title="Tested" className="mt-4" icon={true}>
+    <p> The package’s been tested to make sure that errors in JSON are minimised. </p>
     </Card>
     </div>
   )
