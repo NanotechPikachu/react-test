@@ -13,7 +13,7 @@ export default function Page() {
     <button className="bg-blue-500 text-white mt-10 rounded-full ml-10 text-center py-2 px-4">Click Me</button>
     <GitButton />
     </div>
-    <Card title="text" className="mt-10">
+    <Card title="text" className="mt-10" icon={true}>
     <p> Heyjahahqywyahwhab. 
 gagwgahahaha ahah ahahah hahaha ahagga ahagga ahgaga ahahag
 hwhwgahahahaba </p>
