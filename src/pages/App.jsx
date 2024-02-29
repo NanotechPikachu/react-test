@@ -7,10 +7,10 @@ export default function Page() {
   return (
     <div>
     <TitleNavBar />
-    <h1 className="pt-24 pb-4 text-center font-bold text-zinc-50 hover:text-red-50 text-2xl/[16px]">Nanotech Wiki</h1>
-    <p className="text-center font-sans text-grey-50">A wiki for all by NanotechPikachu</p>
+    <h1 className="pt-24 pb-4 text-center font-bold text-zinc-50 hover:text-red-50 text-2xl/[16px]">AniChu.DB</h1>
+    <p className="text-center font-sans text-grey-50">A JSON DataBase of anime info!</p>
     <div className="flex justify-between px-4 items-center">
-    <button className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full ml-10 text-center py-2 px-4">Click Me</button>
+    <button className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full ml-10 text-center py-2 px-4">Get started → </button>
     <GitButton />
     </div>
     <h2 className="text-xl font-bold text-white mt-10 ml-5 text-left">Features</h2>
