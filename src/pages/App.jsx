@@ -13,7 +13,7 @@ export default function Page() {
     <button className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full ml-10 text-center py-2 px-4">Click Me</button>
     <GitButton />
     </div>
-    <h2 className="text-xl font-bold dark:text-white text-black mt-10">Features</h2>
+    <h2 className="text-xl font-bold text-black mt-10 ml-10 text-left">Features</h2>
     <Card title="AniChu.DB" className="mt-8" icon={true}>
     <p> A DataBase of all animes. </p>
     </Card>
