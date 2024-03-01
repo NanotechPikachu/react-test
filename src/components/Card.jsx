@@ -10,7 +10,7 @@ export default function Card({ title, children, icon, className }) {
           <path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z" fill="currentColor"/>
           </svg>
         )}
-        <span className={`text-2xl font-bold text-white whitespace-pre-line ${icon ? 'flex-grow' : ''}`}>{title}</span>
+        <span className={`text-xl md:text-2xl font-bold text-white whitespace-pre-line ${icon ? 'flex-grow' : ''}`}>{title}</span>
       </div>
       <div className="whitespace-pre-line text-white w-full">{children}</div>
     </div>
