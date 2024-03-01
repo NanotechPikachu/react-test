@@ -9,7 +9,7 @@ export default function Page() {
     <TitleNavBar />
     <h1 className="pt-24 pb-4 text-center font-bold text-zinc-50 hover:text-red-50 text-2xl/[16px] md:text-3xl md:pl-10 md:text-left">AniChu.DB</h1>
     <p className="text-center font-sans text-grey-50 md:pl-10 md:text-left md:text-xl">A JSON DataBase of anime info!</p>
-    <div className="flex justify-around px-2 items-center md:w-1/2 md:pl-10">
+    <div className="flex justify-around px-2 items-center md:w-1/2 md:pl-2">
     <button className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full ml-10 text-center py-2 px-4">Get started</button>
     <GitButton />
     </div>
