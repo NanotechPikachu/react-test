@@ -8,11 +8,11 @@ export default function Page() {
     <div>
       <TitleNavBar />
       <div className="flex flex-col md:flex-row md:items-start md:pl-10">
-        <div className="pt-24 pb-4 text-center md:text-left">
+        <div className="pt-24 pb-4 text-center">
           <h1 className="font-bold text-zinc-50 hover:text-red-50 text-2xl md:text-3xl">AniChu.DB</h1>
           <p className="font-sans text-grey-50 md:text-xl">A JSON DataBase of anime info!</p>
         </div>
-        <div className="flex flex-col md:flex-row md:justify-start md:items-center md:w-auto lg:w-1/4">
+        <div className="flex flex-col md:flex-row md:justify-start md:items-center md:w-auto lg:w-full">
           <button className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full text-center py-2 px-4">Get started</button>
           <GitButton />
         </div>
