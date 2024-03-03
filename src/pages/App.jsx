@@ -13,11 +13,11 @@ export default function Page() {
           <p className="font-sans text-grey-50 md:text-xl">A JSON DataBase of anime info!</p>
         </div>
         <div className="flex md:justify-start md:items-center md:w-auto lg:w-full ml-6">
-          <button className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full text-center py-2 px-4 mr-5">Get started</button>
+          <button className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full text-center py-2 px-4 mr-8">Get started</button>
           <GitButton />
         </div>
       </div>
-      <div className="mt-10 ml-3">
+      <div className="mt-10 ml-1">
         <h2 className="text-xl font-bold text-white text-left">Features</h2>
         <Card title="AniChu.DB" className="mt-5" icon={true}>
           <p> A DataBase of all animes. </p>
