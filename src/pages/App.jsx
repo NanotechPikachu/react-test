@@ -12,7 +12,7 @@ export default function Page() {
           <h1 className="font-bold text-zinc-50 hover:text-red-50 text-2xl md:text-3xl">AniChu.DB</h1>
           <p className="font-sans text-grey-50 md:text-xl">A JSON DataBase of anime info!</p>
         </div>
-        <div className="flex md:justify-start md:items-center md:w-auto lg:w-full">
+        <div className="flex md:justify-start md:items-center md:w-auto lg:w-full ml-6">
           <button className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full text-center py-2 px-4">Get started</button>
           <GitButton />
         </div>
