@@ -10,7 +10,7 @@ export default function Terminal({ command }) {
           onClick={handleCopy}
           className="bg-gray-700 hover:bg-gray-600 text-gray-400 rounded p-1"
         >
-    <ClipboardCopyIcon className="h-5 w-5" />
+    <ClipboardIcon className="h-5 w-5" />
     </button>
     </div>
   )
