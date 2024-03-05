@@ -1,5 +1,5 @@
 import React from 'react';
-import { ClipboardCopyIcon } from '@heroicons/react/24/outline';
+import { ClipboardIcon } from '@heroicons/react/24/outline/esm';
 
 
 export default function Terminal({ command }) {
