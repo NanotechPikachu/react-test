@@ -7,7 +7,7 @@ export default function Terminal({ command }) {
     <div className="flex justify-between items-center bg-black text-green-400 p-3 rounded mt-4 ml-4">
     <span className="text-gray-300">$ {command}</span>
     <button
-          onClick={handleCopy}
+          onClick={() => handleCopy(command)}
           className="bg-gray-700 hover:bg-gray-600 text-gray-400 rounded p-1"
         >
     <ClipboardIcon className="h-5 w-5" />
