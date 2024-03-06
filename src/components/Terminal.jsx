@@ -6,7 +6,7 @@ export default function Terminal({ command }) {
   return (
     <>
     <div className="flex justify-between items-center bg-black rounded mt-4 ml-4 h-5" />
-    <div className="flex justify-between items-center bg-zinc-900 text-green-400 p-3 rounded mt-4 ml-4">
+    <div className="flex justify-between items-center bg-zinc-900 text-green-400 p-3 rounded ml-4">
     <span className="text-blue-500">$ {command}</span>
     <button
           onClick={() => handleCopy(command)}
