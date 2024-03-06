@@ -5,7 +5,7 @@ import { ClipboardIcon } from '@heroicons/react/24/outline';
 export default function Terminal({ command }) {
   return (
     <>
-    <div className="flex items-center bg-black mt-4 ml-5 h-7 mr-5">
+    <div className="flex justify-end items-center bg-black mt-4 ml-5 h-7 mr-5">
     <button
           onClick={() => handleCopy(command)}
           className="text-gray-400 rounded p-1 mr-4"
