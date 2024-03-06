@@ -9,3 +9,7 @@ export default function Copy({ command }) {
     </>
   )
 }
+
+function handleCopy(command) {
+  navigator.clipboard.writeText(command);
+};
