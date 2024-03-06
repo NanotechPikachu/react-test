@@ -11,6 +11,7 @@ export default function Start() {
     <h2 className="ml-5 mr-5 text-xl mt-6 font-bold text-white">Functions Available</h2>
     <ul className="mt-3 ml-8 list-disc">
     <li key="func1"> <Code code="getAnime()" /> - To get an anime from it’s title. </li>
+    <li key="func2"> <Code code="searchAnime()" /> - To search for similar animes.
     </ul>
     </div>
   )
