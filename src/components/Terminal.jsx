@@ -5,7 +5,7 @@ import { ClipboardIcon } from '@heroicons/react/24/outline';
 export default function Terminal({ command }) {
   return (
     <>
-    <div className="flex justify-between items-center bg-black mt-4 ml-5 h-10 mr-5" />
+    <div className="flex justify-between items-center bg-black mt-4 ml-5 h-7 mr-5" />
     <div className="flex justify-between items-center bg-zinc-900 text-green-400 p-3 ml-5 mr-5">
     <span className="text-blue-500">$ {command}</span>
     <button
