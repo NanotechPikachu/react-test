@@ -1,9 +1,15 @@
-import '../css/styles.css';
 import Card from '../components/Card';
 import TitleNavBar from '../components/TitleNavBar';
 import GitButton from '../components/GitButton';
+import { useNavigate } from 'react-router-dom';
 
 export default function Page() {
+  let navigate = useNavigate();
+  
+  function nextPg() {
+    navigate('/start');
+  };
+
   return (
     <div>
       <TitleNavBar />
@@ -13,7 +19,12 @@ export default function Page() {
           <p className="font-sans text-grey-50 md:text-xl">A JSON DataBase of anime info!</p>
         </div>
         <div className="flex md:justify-start md:items-center md:w-auto ml-6">
-          <button className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full text-center py-2 px-4 mr-[75px] md:mr-8">Get started</button>
+          <button 
+          className="bg-blue-500 hover:bg-blue-400 text-white mt-10 rounded-full text-center py-2 px-4 mr-[75px] md:mr-8"
+          onClick={() => nextPg()}
+          >
+          Get started
+          </button>
           <GitButton />
         </div>
       </div>
