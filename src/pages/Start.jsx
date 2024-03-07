@@ -14,7 +14,7 @@ export default function Start() {
     <li key="func1"> <Code code="getAnime()" /> - To get an anime from it’s title. </li>
     <li key="func2" className="mt-2"> <Code code="searchAnime()" /> - To search for similar animes. </li>
     </ul>
-    <NextCard title="hi" link="/h" />
+    <NextCard title="hi" link="/" />
     </div>
   )
 }
