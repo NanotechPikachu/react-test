@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-r from-sky-950/70 to-sky-900/60 backdrop-blur-sm;
+    @apply bg-gradient-to-r from-sky-950/70 to-sky-900/60 backdrop-blur-sm text-base;
   }
 }
 
