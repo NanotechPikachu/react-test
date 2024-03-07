@@ -1,5 +1,6 @@
 import Terminal from '../components/Terminal';
 import Code from '../components/Code';
+import { NextCard } from '../components/PageCards';
 
 export default function Start() {
   return (
@@ -13,6 +14,7 @@ export default function Start() {
     <li key="func1"> <Code code="getAnime()" /> - To get an anime from it’s title. </li>
     <li key="func2" className="mt-2"> <Code code="searchAnime()" /> - To search for similar animes. </li>
     </ul>
+    <NextCard title="hi" link="/h" />
     </div>
   )
 }
