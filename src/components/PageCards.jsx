@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 export function NextCard({ link, title }) {
   return (
-    <div className="flex justify-center mt-20">
-    <div className="rounded-md text-right w-full max-w-[340px] sm:max-w-screen-sm md:max-w-screen-md border-2 border-slate-200/50 bg-transparent">
+    <div className="mt-20 mr-5 ml-5 rounded-md text-right border-2 border-slate-200/50 bg-transparent">
       <div className="flex justify-end items-center">
       <div className="flex flex-col mr-4">
       <p className="text-sm text-slate-500/50">Next</p>
@@ -16,7 +15,6 @@ export function NextCard({ link, title }) {
       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
       </svg>
       </div>
-    </div>
     </div>
   );
 }
