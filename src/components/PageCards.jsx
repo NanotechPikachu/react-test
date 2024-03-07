@@ -12,7 +12,7 @@ export function NextCard({ link, title }) {
     <div className="mt-20 mr-5 ml-5 rounded-md text-right border-2 border-slate-200/50 bg-transparent" onClick={() => nextPage()}>
       <div className="flex justify-end items-center pt-4 pb-4 pr-4">
       <div className="flex flex-col mr-4">
-      <p className="text-sm text-slate-400/50">Next</p>
+      <p className="text-sm text-slate-200/50 dark:text-slate-400/50">Next</p>
       <h2 className="text-xl text-white mt-1">
       {title}
       </h2>
