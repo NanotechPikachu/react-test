@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export function NextCard({ link, title }) {
   return (
     <div className="flex justify-center mt-20">
-    <div className="rounded-md text-right w-full max-w-[340px] border-2 border-slate-200/50 bg-transparent">
+    <div className="rounded-md text-right w-full max-w-[340px] md:max-w-screen-md border-2 border-slate-200/50 bg-transparent">
       <div className="flex justify-end items-center">
       <div className="flex flex-col mr-4">
       <p className="text-sm text-slate-500/50">Next</p>
