@@ -15,7 +15,7 @@ export default function Page() {
       <TitleNavBar />
       <div className="flex flex-col md:pl-10">
         <div className="pt-24 pb-4 text-center md:ml-4 md:text-left">
-          <h1 className="font-bold text-zinc-800 hover:text-red-100 text-2xl md:text-3xl">AniChu.DB</h1>
+          <h1 className="font-bold text-zinc-800 hover:text-red-100 text-3xl md:text-4xl">AniChu.DB</h1>
           <p className="font-sans text-grey-50 md:text-xl">A JSON DataBase of anime info!</p>
         </div>
         <div className="flex md:justify-start md:items-center md:w-auto ml-6">
@@ -29,7 +29,7 @@ export default function Page() {
         </div>
       </div>
       <div className="mt-10">
-        <h2 className="text-xl font-bold text-white text-left ml-4">Features</h2>
+        <h2 className="text-2xl font-bold text-black text-left ml-4">Features</h2>
         <Card title="AniChu.DB" className="mt-5" icon={true}>
           <p> A DataBase of all animes. </p>
         </Card>
