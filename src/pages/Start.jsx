@@ -1,6 +1,6 @@
 import Terminal from '../components/Terminal';
 import Code from '../components/Code';
-import { NextCard } from '../components/PageCards';
+import { NextCard, PrevCard } from '../components/PageCards';
 
 export default function Start() {
   return (
@@ -15,6 +15,7 @@ export default function Start() {
     <li key="func2" className="mt-2"> <Code code="searchAnime()" /> - To search for similar animes. </li>
     </ul>
     <NextCard title="hi" link="/" />
+    <PrevCard title="Home" link="/" />
     </div>
   )
 }
