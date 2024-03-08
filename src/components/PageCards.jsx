@@ -9,11 +9,11 @@ export function NextCard({ link, title }) {
   };
 
   return (
-    <div className="mt-20 mr-5 ml-5 rounded-md text-right border-2 border-slate-200/50 hover:border-lime-300/40 bg-transparent hover:text-lime-300/50" onClick={() => nextPage()}>
+    <div className="mt-20 mr-5 ml-5 rounded-md text-right border-2 border-slate-400/50 hover:border-lime-300/40 bg-transparent hover:text-lime-300/50" onClick={() => nextPage()}>
       <div className="flex justify-end items-center pt-4 pb-4 pr-4 hover:text-lime-300/50">
       <div className="flex flex-col mr-4">
-      <p className="text-sm dark:text-slate-300/50 text-slate-200/50">Next</p>
-      <h2 className="text-xl text-white mt-1">
+      <p className="text-sm dark:text-slate-500/50 text-slate-200/50">Next</p>
+      <h2 className="text-xl text-black mt-1">
       {title}
       </h2>
       </div>
