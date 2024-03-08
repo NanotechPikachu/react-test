@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom';
 export function NextCard({ link, title }) {
   let navigate = useNavigate();
 
-  function nextPage() {
+  function prevPage() {
     navigate(link);
   };
 
   return (
-    <div className="mt-20 mr-5 ml-5 rounded-md text-right border-2 border-slate-400/50 hover:border-lime-300/40 bg-transparent hover:text-lime-300/50" onClick={() => nextPage()}>
+    <div className="mt-20 mr-5 ml-5 rounded-md text-right border-2 border-slate-400/50 hover:border-lime-300/40 bg-transparent hover:text-lime-300/50" onClick={() => prevPage()}>
       <div className="flex justify-end items-center pt-4 pb-4 pr-4 hover:text-lime-300/50">
       <div className="flex flex-col mr-4">
       <p className="text-sm dark:text-slate-500/50 text-slate-200/50">Next</p>
