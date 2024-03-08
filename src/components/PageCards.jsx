@@ -36,7 +36,7 @@ export function PrevCard({ link, title }) {
     <div className="mt-20 mr-5 ml-5 rounded-md text-left border-2 border-slate-400/50 hover:border-lime-300/40 bg-transparent hover:text-lime-300/50" onClick={() => nextPage()}>
       <div className="flex justify-start items-center pt-4 pb-4 pr-4 hover:text-lime-300/50">
       <div className="flex flex-col ml-4">
-      <p className="text-sm dark:text-slate-500/50 text-slate-200/50">Next</p>
+      <p className="text-sm dark:text-slate-500/50 text-slate-200/50">Previous</p>
       <h2 className="text-xl text-black mt-1">
       {title}
       </h2>
