@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export function NextCard({ link, title }) {
+export function NextCard({ link, title, className }) {
   let navigate = useNavigate();
 
   function prevPage() {
@@ -9,7 +9,7 @@ export function NextCard({ link, title }) {
   };
 
   return (
-    <div className="mt-20 mr-5 ml-5 rounded-md text-right border-2 border-slate-400/50 hover:border-lime-300/40 bg-transparent hover:text-lime-300/50" onClick={() => prevPage()}>
+    <div className={`mr-5 ml-5 rounded-md text-right border-2 border-slate-400/50 hover:border-lime-300/40 bg-transparent hover:text-lime-300/50 ${className}`} onClick={() => prevPage()}>
       <div className="flex justify-end items-center pt-4 pb-4 pr-4 hover:text-lime-300/50">
       <div className="flex flex-col mr-4">
       <p className="text-sm dark:text-slate-500/50 text-slate-200/50">Next</p>
@@ -25,7 +25,7 @@ export function NextCard({ link, title }) {
   );
 }
 
-export function PrevCard({ link, title }) {
+export function PrevCard({ link, title, className }) {
   let navigate = useNavigate();
 
   function nextPage() {
@@ -33,7 +33,7 @@ export function PrevCard({ link, title }) {
   };
 
   return (
-    <div className="mt-20 mr-5 ml-5 rounded-md text-left border-2 border-slate-400/50 hover:border-lime-300/40 bg-transparent hover:text-lime-300/50" onClick={() => nextPage()}>
+    <div className={`mr-5 ml-5 rounded-md text-left border-2 border-slate-400/50 hover:border-lime-300/40 bg-transparent hover:text-lime-300/50 ${className}`} onClick={() => nextPage()}>
       <div className="flex justify-start items-center pt-4 pb-4 pr-4 hover:text-lime-300/50">
       <div className="flex flex-col ml-4">
       <p className="text-sm dark:text-slate-500/50 text-slate-200/50">Previous</p>
