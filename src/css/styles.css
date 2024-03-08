@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-r from-purple-800/70 to-purple-700/60 backdrop-blur-sm text-base;
+    @apply bg-gradient-to-r from-cyan-200/20 to-purple-100/10 backdrop-blur-sm text-base;
   }
 }
 
