@@ -13,6 +13,9 @@ export default function Page() {
   return (
     <div>
       <TitleNavBar />
+<p className="text-2xl"> 
+Heya
+</p>
       <div className="flex flex-col md:pl-10">
         <div className="pt-24 pb-4 text-center md:ml-4 md:text-left">
           <h1 className="font-bold text-zinc-800 hover:text-zinc-700 text-3xl md:text-4xl">AniChu.DB</h1>
