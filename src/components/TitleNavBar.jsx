@@ -9,7 +9,7 @@ export default function TitleNavBar() {
     // Detect scroll position
     const currentScrollPos = window.pageYOffset;
     // Set state based on scroll direction
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 10) || currentScrollPos < 10);
     // Save the new position for comparison
     setPrevScrollPos(currentScrollPos);
   };
