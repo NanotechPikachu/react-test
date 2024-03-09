@@ -21,7 +21,7 @@ export default function TitleNavBar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full flex items-center justify-between py-4 px-8 border-b border-primary-color shadow-md z-10 transition-all duration-300 ease-in-out ${visible ? 'bg-transparent' : 'bg-white shadow-lg'}`}>
+      <nav className={`top-0 left-0 w-full flex items-center justify-between py-4 px-8 border-b border-primary-color shadow-md z-10 transition-all duration-300 ease-in-out ${visible ? 'bg-transparent' : 'bg-white shadow-lg'}`}>
         <p className="font-bold text-left text-sky-600 hover:text-amber-700 text-xl font-sans">
           Nanotech Wiki
         </p>
