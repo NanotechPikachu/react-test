@@ -14,7 +14,7 @@ export default function Page() {
     <div>
       <TitleNavBar />
       <div className="flex flex-col md:pl-10">
-      <p>hhqhqga</p>
+      <p className="backdrop-blur-lg text-xl">hhqhqga</p>
         <div className="pt-24 pb-4 text-center md:ml-4 md:text-left">
           <h1 className="font-bold text-zinc-800 hover:text-zinc-700 text-3xl md:text-4xl">AniChu.DB</h1>
           <p className="font-sans text-grey-50 md:text-xl">A JSON DataBase of anime info!</p>
