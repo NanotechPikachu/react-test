@@ -2,26 +2,28 @@ import React, { useState, useEffect } from 'react';
 import "../css/styles.css";
 
 export default function TitleNavBar() {
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
   const [visible, setVisible] = useState(true);
 
   const handleScroll = () => {
-    // Detect scroll position
-    const currentScrollPos = window.pageYOffset;
-    // Set state based on scroll direction
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 10) || currentScrollPos < 10);
-    // Save the new position for comparison
-    setPrevScrollPos(currentScrollPos);
+    let currentScrollPos = window.pageYOffset;
+
+    if (currentScrollPos < lastScrollTop) {
+      setVisible(true); // Show navbar when scrolling up
+    } else {
+      setVisible(false); // Hide navbar when scrolling down
+    }
+    setLastScrollTop(currentScrollPos <= 0 ? 0 : currentScrollPos); // For Mobile or negative scrolling
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos, visible]);
+  }, [lastScrollTop]);
 
   return (
     <>
-      <nav className={`top-0 left-0 w-full flex items-center justify-between py-4 px-8 border-b border-primary-color shadow-md z-10 transition-all duration-300 ease-in-out ${visible ? 'bg-transparent' : 'bg-white shadow-lg'}`}>
+      <nav className={`fixed top-0 left-0 w-full z-10 transition-all duration-300 ease-in-out ${visible ? 'visible' : 'invisible'}`}>
         <p className="font-bold text-left text-sky-600 hover:text-amber-700 text-xl font-sans">
           Nanotech Wiki
         </p>
@@ -29,4 +31,3 @@ export default function TitleNavBar() {
     </>
   );
 }
-
