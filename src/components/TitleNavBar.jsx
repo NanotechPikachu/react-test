@@ -8,12 +8,11 @@ export default function TitleNavBar() {
   const handleScroll = () => {
     let currentScrollPos = window.pageYOffset;
 
-    if (currentScrollPos < lastScrollTop) {
-      setVisible(true); // Show navbar when scrolling up
-    } else {
-      setVisible(false); // Hide navbar when scrolling down
-    }
-    setLastScrollTop(currentScrollPos <= 0 ? 0 : currentScrollPos); // For Mobile or negative scrolling
+    // Make navbar visible only when scrolling down
+    setVisible(currentScrollPos > lastScrollTop || currentScrollPos < 10);
+
+    // Save the new position for comparison
+    setLastScrollTop(currentScrollPos <= 0 ? 0 : currentScrollPos);
   };
 
   useEffect(() => {
@@ -23,7 +22,7 @@ export default function TitleNavBar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full z-10 transition-all duration-300 ease-in-out ${visible ? 'visible' : 'invisible'}`}>
+      <nav className={`top-0 left-0 w-full flex items-center justify-between py-4 px-8 border-b border-primary-color shadow-md z-10 transition-all duration-300 ease-in-out ${visible ? 'visible' : 'invisible'}`}>
         <p className="font-bold text-left text-sky-600 hover:text-amber-700 text-xl font-sans">
           Nanotech Wiki
         </p>
