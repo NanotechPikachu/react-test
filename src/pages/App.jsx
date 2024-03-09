@@ -11,7 +11,7 @@ export default function Page() {
   };
 
   return (
-    <div>
+    <>
       <TitleNavBar />
       <div className="flex flex-col md:pl-10">
         <div className="pt-24 pb-4 text-center md:ml-4 md:text-left">
@@ -37,6 +37,6 @@ export default function Page() {
           <p> The package's been tested to make sure that errors in JSON are minimized. </p>
         </Card>
       </div>
-    </div>
+    </>
   )
 }
