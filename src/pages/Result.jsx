@@ -9,5 +9,6 @@ export default function Result() {
     <p className="ml-5 mr-5 mt-4 text-black">
     This page deals with the JSON DB output as well as discussing the results or outputs of functions.
     </p>
+    </div>
   )
 }
