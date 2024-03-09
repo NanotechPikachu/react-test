@@ -3,7 +3,7 @@ import '../css/styles.css';
 
 export default function Card({ title, children, icon, className }) {
   return (
-    <div className={`border md:w-96 p-5 m-5 bg-zinc-900 backdrop-blur overflow-hidden flex flex-col items-start ${className}`}>
+    <div className={`border md:w-96 p-5 m-5 bg-zinc-900 overflow-hidden flex flex-col items-start ${className}`}>
       <div className="flex items-center w-full mb-4">
         {icon && (
           <svg className="text-blue-500 w-8 h-8 mr-2 align-middle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
