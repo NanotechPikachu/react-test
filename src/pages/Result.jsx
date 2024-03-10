@@ -18,6 +18,11 @@ export default function Result() {
   recommendations: '....',
   background: '....'
 }`;
+  const b = "const db = require('anichu.db');
+(async () => {
+  const res = await db.anime.get('sword art online'); // Refer the getAnime() page for usage
+  console.log(`${res.title} \n${res.year}`); // Like this
+})();";
   return (
     <div>
     <h1 className="ml-4 text-3xl md:text-4xl pt-24 mb-4 font-bold text-black">Result Type</h1>
@@ -43,6 +48,14 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     </CodeBlock>
     </div>
     <p className="mt-4 ml-4 mr-4">This function’s output can be accessed as such:</p>
+    <div className="bg-black mt-4 ml-5 mr-5 rounded-lg">
+    <div className="flex justify-end items-center bg-black ml-5 h-7 mr-5 mb-0 rounded-lg"> 
+    <Copy command={b} />
+    </div>
+    <CodeBlock language="javascript" style={style} showLineNumbers={true} wrapLines={true}>
+    {c}
+    </CodeBlock>
+    </div>
 {/*
     <CodeBlock lang="json" code="{
   title: '....',
