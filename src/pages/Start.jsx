@@ -11,8 +11,8 @@ export default function Start() {
     <Terminal command="npm i anichu.db" />
     <h2 className="ml-5 mr-5 text-2xl mt-6 font-bold text-black">Functions Available</h2>
     <ul className="mt-3 ml-8 list-disc mr-8 text-base text-black">
-    <li key="func1"> <Code code="getAnime()" /> - To get an anime from it’s title. </li>
-    <li key="func2" className="mt-2"> <Code code="searchAnime()" /> - To search for similar animes. </li>
+    <li key="func1"> <Code code="getAnime()" className="text-sm" /> - To get an anime from it’s title. </li>
+    <li key="func2" className="mt-2"> <Code code="searchAnime()" className="text-sm" /> - To search for similar animes. </li>
     </ul>
     <NextCard title="hi" link="/" className="mt-20" />
     <PrevCard title="Home" link="/" className="mt-3 mb-10" />
