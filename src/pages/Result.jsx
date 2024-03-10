@@ -56,6 +56,12 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     {b}
     </CodeBlock>
     </div>
+    <h2 className="ml-4 text-2xl md:text-3xl mt-8 font-bold text-black">searchAnime()</h2>
+    <p className="ml-4 text-black mt-3">
+This function returns an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" className="text-blue-600 hover:text-blue-700"><u>Promise</u></a> as such it’s an <b>Asynchronous</b> function needing to be <Code code="await" />-ed.
+<br /> <br />
+The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" className="text-blue-600 hover:text-blue-700"><u>Array</u></a>, having <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" className="text-blue-600 hover:text-blue-700"><u>Object</u></a>s as it’s elements. Each Object is the data returned by DB.
+    </p>
 {/*
     <CodeBlock lang="json" code="{
   title: '....',
