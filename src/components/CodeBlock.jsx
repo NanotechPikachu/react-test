@@ -11,4 +11,6 @@ export default function CodeBlock({ lang, code }) {
 }
 */
 
-export { SyntaxHighlighter };
+const style = a11yDark;
+
+export { SyntaxHighlighter, style };
