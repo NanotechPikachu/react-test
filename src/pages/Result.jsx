@@ -53,7 +53,7 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     <Copy command={b} />
     </div>
     <CodeBlock language="javascript" style={style} showLineNumbers={true} wrapLines={true}>
-    {c}
+    {b}
     </CodeBlock>
     </div>
 {/*
