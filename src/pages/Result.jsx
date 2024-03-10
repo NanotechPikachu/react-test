@@ -31,7 +31,7 @@ export default function Result() {
     This page deals with the JSON DB output as well as discussing the results or outputs of functions.
     </p>
     <h2 className="ml-4 text-2xl md:text-3xl mt-8 font-bold text-black">getAnime()</h2>
-    <p className="ml-4 text-black mt-3">
+    <p className="ml-4 text-black mt-3 mr-4">
 This function returns an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" className="text-blue-600 hover:text-blue-700"><u>Promise</u></a> as such it’s an <b>Asynchronous</b> function needing to be <Code code="await" />-ed.
 <br /> <br />
 The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" className="text-blue-600 hover:text-blue-700"><u>Object</u></a> which has the relevant data of the anime(if any).
@@ -57,11 +57,14 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     </CodeBlock>
     </div>
     <h2 className="ml-4 text-2xl md:text-3xl mt-8 font-bold text-black">searchAnime()</h2>
-    <p className="ml-4 text-black mt-3">
+    <p className="ml-4 text-black mt-3 mr-4">
 This function returns an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" className="text-blue-600 hover:text-blue-700"><u>Promise</u></a> as such it’s an <b>Asynchronous</b> function needing to be <Code code="await" />-ed.
 <br /> <br />
 The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" className="text-blue-600 hover:text-blue-700"><u>Array</u></a>, having <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" className="text-blue-600 hover:text-blue-700"><u>Object</u></a>s as it’s elements. Each Object is the data returned by DB.
     </p>
+    <h3 className="text-xl ml-4 mt-8 font-bold mb-4">
+    Data Structure of <Code code="searchAnime()" className="text-lg" />
+    </h3>
 {/*
     <CodeBlock lang="json" code="{
   title: '....',
