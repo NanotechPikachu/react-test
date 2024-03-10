@@ -1,6 +1,6 @@
 import Code from '../components/Code';
 import { NextCard, PrevCard } from '../components/PageCards';
-import { SyntaxHighligher as CodeBlock, style } from '../components/CodeBlock';
+import { SyntaxHighlighter as CodeBlock, style } from '../components/CodeBlock';
 
 export default function Result() {
   const c = `{
