@@ -1,6 +1,7 @@
 import Code from '../components/Code';
 import { NextCard, PrevCard } from '../components/PageCards';
 import { SyntaxHighlighter as CodeBlock, style } from '../components/CodeBlock';
+import Copy from '../components/Copy';
 
 export default function Result() {
   const c = `{
@@ -33,9 +34,14 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     <h3 className="text-xl ml-4 mt-8 font-bold mb-4">
     Data Structure of <Code code="getAnime()" className="text-lg" />
     </h3>
-   <CodeBlock language="json" style={style} showLineNumbers={true} wrapLines={true}>
-{c}
-</CodeBlock>
+    <div className="flex justify-end items-center bg-black mt-4 ml-5 h-7 mr-5"> 
+    <Copy command={c} />
+    </div>
+    <div className="ml-5 mr-5">   
+    <CodeBlock language="json" style={style} showLineNumbers={true} wrapLines={true}>
+    {c}
+    </CodeBlock>
+    </div>
 {/*
     <CodeBlock lang="json" code="{
   title: '....',
