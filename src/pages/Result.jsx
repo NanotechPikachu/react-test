@@ -35,7 +35,7 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
   background: '....'
 }" 
 />
-*}
+*/}
     </div>
   )
 }
