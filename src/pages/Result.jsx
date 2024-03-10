@@ -23,6 +23,44 @@ export default function Result() {
   const res = await db.anime.get(\'sword art online\'); // Refer the getAnime() page for usage 
   console.log(\`\${res.title} \\n\${res.year}\`); // Like this 
 })();`;
+  const a = `[
+{
+  title: '....',
+  synopsis: '....',
+  episodes: '....',
+  url: 'https://myanimelist.net/anime/....',
+  genres: '....',
+  ratings: 'Average score based off ....',
+  image: 'https://cdn.myanimelist.net/images/anime/....',
+  year: 1234,
+  trailer: 'https://www.youtube.com/embed/....',
+  studio: '....',
+  recommendations: '....',
+  background: '....'
+}, {
+  title: '....',
+  synopsis: '....',
+  episodes: '....',
+  url: 'https://myanimelist.net/anime/....',
+  genres: '....',
+  ratings: 'Average score based off ....',
+  image: 'https://cdn.myanimelist.net/images/anime/....',
+  year: 1234,
+  trailer: 'https://www.youtube.com/embed/....',
+  studio: '....',
+  recommendations: '....',
+  background: '....'
+}, { ... }
+  ...
+]`;
+  const d = `const db = require(\'anichu.db\');
+(async () => {
+  const res = await db.anime.search(\'sword art online\', 0.6); // Refer the getAnime() page for usage
+  for (const e of res) { // Using loop cuz it returns array
+    console.log(\`\${e.title}\\n\${e.year}\`); // Logs all anime titles in console as it returns
+  };
+})();`;
+
   return (
     <div>
     <h1 className="ml-4 text-3xl md:text-4xl pt-24 mb-4 font-bold text-black">Result Type</h1>
@@ -65,23 +103,23 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     <h3 className="text-xl ml-4 mt-8 font-bold mb-4">
     Data Structure of <Code code="searchAnime()" className="text-lg" />
     </h3>
-{/*
-    <CodeBlock lang="json" code="{
-  title: '....',
-  synopsis: '....',
-  episodes: '....',
-  url: 'https://myanimelist.net/anime/....',
-  genres: '....',
-  ratings: 'Average score based off ....',
-  image: 'https://cdn.myanimelist.net/images/anime/....',
-  year: 1234,
-  trailer: 'https://www.youtube.com/embed/....',
-  studio: '....',
-  recommendations: '....',
-  background: '....'
-}" 
-/>
-*/}
+    <div className="bg-black mt-4 ml-5 mr-5 rounded-lg">
+    <div className="flex justify-end items-center bg-black ml-5 h-7 mr-5 mb-0 rounded-lg"> 
+    <Copy command={a} />
+    </div>
+    <CodeBlock language="json" style={style} showLineNumbers={true} wrapLines={true}>
+    {a}
+    </CodeBlock>
+    </div>
+    <p className="mt-4 ml-4 mr-4">This function’s output can be accessed as such:</p>
+    <div className="bg-black mt-4 ml-5 mr-5 rounded-lg">
+    <div className="flex justify-end items-center bg-black ml-5 h-7 mr-5 mb-0 rounded-lg"> 
+    <Copy command={d} />
+    </div>
+    <CodeBlock language="javascript" style={style} showLineNumbers={true} wrapLines={true}>
+    {d}
+    </CodeBlock>
+    </div>
     </div>
   )
 }
