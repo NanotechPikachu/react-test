@@ -42,6 +42,7 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     {c}
     </CodeBlock>
     </div>
+    <p className="mt-4 ml-4 mr-4">This function’s output can be accessed as such:</p>
 {/*
     <CodeBlock lang="json" code="{
   title: '....',
