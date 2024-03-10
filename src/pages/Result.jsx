@@ -18,11 +18,11 @@ export default function Result() {
   recommendations: '....',
   background: '....'
 }`;
-  const b = "const db = require('anichu.db');
+  const b = `const db = require('anichu.db');
 (async () => {
   const res = await db.anime.get('sword art online'); // Refer the getAnime() page for usage
   console.log(`${res.title} \n${res.year}`); // Like this
-})();";
+})();`;
   return (
     <div>
     <h1 className="ml-4 text-3xl md:text-4xl pt-24 mb-4 font-bold text-black">Result Type</h1>
