@@ -34,8 +34,8 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     <h3 className="text-xl ml-4 mt-8 font-bold mb-4">
     Data Structure of <Code code="getAnime()" className="text-lg" />
     </h3>
-    <div className="bg-black">
-    <div className="flex justify-end items-center bg-black mt-4 ml-5 h-7 mr-5 mb-0"> 
+    <div className="bg-black mt-4 ml-5 mr-5">
+    <div className="flex justify-end items-center bg-black ml-5 h-7 mr-5 mb-0"> 
     <Copy command={c} />
     </div>
     <div className="ml-5 mr-5 mt-0">   
