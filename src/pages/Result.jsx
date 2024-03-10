@@ -16,7 +16,7 @@ This function returns an <a href="https://developer.mozilla.org/en-US/docs/Web/J
 The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" className="text-blue-600 hover:text-blue-700"><u>Object</u></a> which has the relevant data of the anime(if any).
     </p>
     <h3 className="text-xl ml-4 mt-8 font-bold">
-    Data Structure of <Code code="getAnime()" />
+    Data Structure of <Code code="getAnime()" className="text-lg" />
     </h3>
     </div>
   )
