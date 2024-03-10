@@ -1,5 +1,6 @@
 import Code from '../components/Code';
 import { NextCard, PrevCard } from '../components/PageCards';
+import CodeBlock from '../components/CodeBlock';
 
 export default function Result() {
   return (
@@ -15,9 +16,25 @@ This function returns an <a href="https://developer.mozilla.org/en-US/docs/Web/J
 <br /> <br />
 The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" className="text-blue-600 hover:text-blue-700"><u>Object</u></a> which has the relevant data of the anime(if any).
     </p>
-    <h3 className="text-xl ml-4 mt-8 font-bold">
+    <h3 className="text-xl ml-4 mt-8 font-bold mb-4">
     Data Structure of <Code code="getAnime()" className="text-lg" />
     </h3>
+    <CodeBlock lang="json">
+{
+  title: '....',
+  synopsis: '....',
+  episodes: '....',
+  url: 'https://myanimelist.net/anime/....',
+  genres: '....',
+  ratings: 'Average score based off ....',
+  image: 'https://cdn.myanimelist.net/images/anime/....',
+  year: 1234,
+  trailer: 'https://www.youtube.com/embed/....',
+  studio: '....',
+  recommendations: '....',
+  background: '....'
+}
+    </CodeBlock>
     </div>
   )
 }
