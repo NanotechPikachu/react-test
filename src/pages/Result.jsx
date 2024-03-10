@@ -38,11 +38,9 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     <div className="flex justify-end items-center bg-black ml-5 h-7 mr-5 mb-0 rounded-lg"> 
     <Copy command={c} />
     </div>
-    <div> 
     <CodeBlock language="json" style={style} showLineNumbers={true} wrapLines={true}>
     {c}
     </CodeBlock>
-    </div>
     </div>
 {/*
     <CodeBlock lang="json" code="{
