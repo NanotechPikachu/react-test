@@ -11,7 +11,7 @@ export default function Page() {
   };
 
   return (
-    <>
+    <div>
       <TitleNavBar />
       <div className="flex flex-col md:pl-10">
         <div className="pt-24 pb-4 text-center md:ml-4 md:text-left">
@@ -28,7 +28,7 @@ export default function Page() {
           <GitButton />
         </div>
       </div>
-      <div className="mt-10 pb-96">
+      <div className="mt-10">
         <h2 className="text-2xl font-bold text-black text-left ml-4">Features</h2>
         <Card title="AniChu.DB" className="mt-5" icon={true}>
           <p> A DataBase of all animes. </p>
@@ -37,6 +37,6 @@ export default function Page() {
           <p> The package's been tested to make sure that errors in JSON are minimized. </p>
         </Card>
       </div>
-    </>
+    </div>
   )
 }
