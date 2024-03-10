@@ -3,6 +3,20 @@ import { NextCard, PrevCard } from '../components/PageCards';
 import { SyntaxHighligher as CodeBlock, style } from '../components/CodeBlock';
 
 export default function Result() {
+  const c = `{
+  title: '....',
+  synopsis: '....',
+  episodes: '....',
+  url: 'https://myanimelist.net/anime/....',
+  genres: '....',
+  ratings: 'Average score based off ....',
+  image: 'https://cdn.myanimelist.net/images/anime/....',
+  year: 1234,
+  trailer: 'https://www.youtube.com/embed/....',
+  studio: '....',
+  recommendations: '....',
+  background: '....'
+}`;
   return (
     <div>
     <h1 className="ml-4 text-3xl md:text-4xl pt-24 mb-4 font-bold text-black">Result Type</h1>
@@ -20,20 +34,7 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     Data Structure of <Code code="getAnime()" className="text-lg" />
     </h3>
    <CodeBlock language="json" style={style} showLineNumbers={true} wrapLines={true}>
-<code>{
-  title: '....',
-  synopsis: '....',
-  episodes: '....',
-  url: 'https://myanimelist.net/anime/....',
-  genres: '....',
-  ratings: 'Average score based off ....',
-  image: 'https://cdn.myanimelist.net/images/anime/....',
-  year: 1234,
-  trailer: 'https://www.youtube.com/embed/....',
-  studio: '....',
-  recommendations: '....',
-  background: '....'
-}</code>
+<code>{c}</code>
 </CodeBlock>
 {/*
     <CodeBlock lang="json" code="{
