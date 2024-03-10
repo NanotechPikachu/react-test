@@ -19,8 +19,7 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     <h3 className="text-xl ml-4 mt-8 font-bold mb-4">
     Data Structure of <Code code="getAnime()" className="text-lg" />
     </h3>
-    <CodeBlock lang="json" code="
-{
+    <CodeBlock lang="json" code="{
   title: '....',
   synopsis: '....',
   episodes: '....',
@@ -33,7 +32,8 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
   studio: '....',
   recommendations: '....',
   background: '....'
-}" />
+}" 
+/>
     </div>
   )
 }
