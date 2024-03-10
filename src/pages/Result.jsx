@@ -1,6 +1,6 @@
 import Code from '../components/Code';
 import { NextCard, PrevCard } from '../components/PageCards';
-import CodeBlock from '../components/CodeBlock';
+import { SyntaxHighligher as CodeBlock, style } from '../components/CodeBlock';
 
 export default function Result() {
   return (
@@ -19,6 +19,22 @@ The promise consists of an <a href="https://developer.mozilla.org/en-US/docs/Web
     <h3 className="text-xl ml-4 mt-8 font-bold mb-4">
     Data Structure of <Code code="getAnime()" className="text-lg" />
     </h3>
+   <CodeBlock language="json" style={a11yDark} showLineNumbers={true} wrapLines={true}>
+{
+  title: '....',
+  synopsis: '....',
+  episodes: '....',
+  url: 'https://myanimelist.net/anime/....',
+  genres: '....',
+  ratings: 'Average score based off ....',
+  image: 'https://cdn.myanimelist.net/images/anime/....',
+  year: 1234,
+  trailer: 'https://www.youtube.com/embed/....',
+  studio: '....',
+  recommendations: '....',
+  background: '....'
+}
+</CodeBlock>
 {/*
     <CodeBlock lang="json" code="{
   title: '....',
